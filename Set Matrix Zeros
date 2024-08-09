@@ -1,0 +1,22 @@
+class Solution:
+  def matrix_to_zeroes(self, matrix:List[List[int]])-> None:
+    m = len(matrix)
+    n = len(matrix[0])
+
+    rows_to_zero = set() # Empty Set
+    cols_to_zero = set() 
+
+    for i in range(m):
+      for j in range(n):
+        if matrix[i][j] == 0:
+          rows_to_zero.add()
+          cols_to_zero.add()
+
+    for i in range(m):
+      for j in range(n):
+        if i in rows_to_zero or j in cols_to_zero:
+          matrix[i][j] = 0
+
+
+#Complexity : O(m*n)
+
